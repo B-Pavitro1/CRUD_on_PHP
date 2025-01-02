@@ -1,9 +1,11 @@
 <?php
+
+// DB Connection
 $conn = mysqli_connect("localhost","root","","userinfo");
-// if($conn){
-//     echo "connection success";
-// }
-// else{
-//     echo "connection unsuccess";
-// }
+if($conn){
+    echo "connection success";
+}
+else{
+    echo "connection unsuccess";
+}
 ?>  
