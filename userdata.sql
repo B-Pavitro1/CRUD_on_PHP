@@ -24,10 +24,10 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `userdata`
+-- Table structure for table `studentdata`
 --
 
-CREATE TABLE `userdata` (
+CREATE TABLE `studentdata` (
   `id` int(11) NOT NULL,
   `image` text NOT NULL,
   `name` text NOT NULL,
@@ -41,10 +41,10 @@ CREATE TABLE `userdata` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `userdata`
+-- Dumping data for table `studentdata`
 --
 
-INSERT INTO `userdata` (`id`, `image`, `name`, `email`, `phone`, `classname`, `rollno`, `school`, `gender`, `created_at`) VALUES
+INSERT INTO `studentdata` (`id`, `image`, `name`, `email`, `phone`, `classname`, `rollno`, `school`, `gender`, `created_at`) VALUES
 (1, 'uploads/6773dc231175f2.24338292.jpg', 'Student1', 'student1@gmail.com', '7845120369', '3rd', 33, 'ZPH School', 'Male', '2024-12-31 11:57:23'),
 (2, 'uploads/6773e14957b825.29393907.jpg', 'Student2', 'student2@gmail.com', '9985654144', '12th', 12, 'ZPH School', 'Female', '2024-12-31 12:19:21');
 
@@ -53,9 +53,9 @@ INSERT INTO `userdata` (`id`, `image`, `name`, `email`, `phone`, `classname`, `r
 --
 
 --
--- Indexes for table `userdata`
+-- Indexes for table `studentdata`
 --
-ALTER TABLE `userdata`
+ALTER TABLE `studentdata`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -63,9 +63,9 @@ ALTER TABLE `userdata`
 --
 
 --
--- AUTO_INCREMENT for table `userdata`
+-- AUTO_INCREMENT for table `studentdata`
 --
-ALTER TABLE `userdata`
+ALTER TABLE `studentdata`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 COMMIT;
 
