@@ -45,12 +45,8 @@ CREATE TABLE `userdata` (
 --
 
 INSERT INTO `userdata` (`id`, `image`, `name`, `email`, `phone`, `classname`, `rollno`, `school`, `gender`, `created_at`) VALUES
-(3, 'uploads/6773dc231175f2.24338292.jpg', 'Suresh', 'suresh18@gmail.com', '7845120369', '3rd', 33, 'ZPH School Palasa', 'Male', '2024-12-31 11:57:23'),
-(4, 'uploads/6773e14957b825.29393907.jpg', 'Tarun Kumar', 'tarun@gmail.com', '9985654144', '12th', 12, 'ZPH School Nagarmpalli', 'Male', '2024-12-31 12:19:21'),
-(5, 'uploads/6773e3a53a1b13.98314697.jpg', 'Gowri B', 'gowri167@gmail.com', '9512360487', '11th', 78, 'ZPH School Kotturu', 'Female', '2024-12-31 12:29:25'),
-(6, 'uploads/6773eb112cfeb8.82738079.jpg', 'Priyanka', 'priyanka001@gmail.com', '6307895412', '1st', 1, 'ZPH School Hukumpeta', 'Female', '2024-12-31 13:01:05'),
-(11, 'uploads/6774eabc205391.39477749.avif', 'Uday', 'uday11@gmail.com', '7845784502', '9th', 14, 'ZPH School Nuvvalarevu', 'Male', '2025-01-01 07:11:56'),
-(12, 'uploads/6774ec266ca555.58048144.jfif', 'Siddu', 'sid16@gmail.com', '8979456210', '2nd', 24, 'ZPH School Nagarmpalli', 'Female', '2025-01-01 07:14:20');
+(1, 'uploads/6773dc231175f2.24338292.jpg', 'Student1', 'student1@gmail.com', '7845120369', '3rd', 33, 'ZPH School', 'Male', '2024-12-31 11:57:23'),
+(2, 'uploads/6773e14957b825.29393907.jpg', 'Student2', 'student2@gmail.com', '9985654144', '12th', 12, 'ZPH School', 'Female', '2024-12-31 12:19:21');
 
 --
 -- Indexes for dumped tables
