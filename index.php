@@ -3,13 +3,13 @@ include("connection.php");
 
 // Fetch data when editing
 if(isset($_GET['id'])) {
-    $query = mysqli_query($conn, "SELECT * FROM userdata WHERE id='" . $_GET['id'] . "'");
+    $query = mysqli_query($conn, "SELECT * FROM studentdata WHERE id='" . $_GET['id'] . "'");
     $fetch = mysqli_fetch_assoc($query);
 }
 
 // Delete user
 if(isset($_GET['delid'])) {
-    mysqli_query($conn, "DELETE FROM userdata WHERE id='" . $_GET['delid'] . "'");
+    mysqli_query($conn, "DELETE FROM studentdata WHERE id='" . $_GET['delid'] . "'");
 }
 
 // Image upload and form submission
@@ -43,12 +43,12 @@ if (isset($_POST['submit']) || isset($_POST['update'])) {
 
     if (isset($_POST['update'])) {
         // Update user data (include image if uploaded)
-        $query = "UPDATE userdata SET name='$name', email='$email', phone='$phone', classname='$classname', rollno='$rollno', school='$school', gender='$gender'";
+        $query = "UPDATE studentdata SET name='$name', email='$email', phone='$phone', classname='$classname', rollno='$rollno', school='$school', gender='$gender'";
         if ($imagePath) $query .= ", image='$imagePath'";
         $query .= " WHERE id='" . $_POST['id'] . "'";
     } else {
         // Insert new user data (include image)
-        $query = "INSERT INTO userdata (image, name, email, phone, classname, rollno, school, gender, created_at) VALUES ('$imagePath', '$name', '$email', '$phone', '$classname', '$rollno', '$school', '$gender', now())";
+        $query = "INSERT INTO studentdata (image, name, email, phone, classname, rollno, school, gender, created_at) VALUES ('$imagePath', '$name', '$email', '$phone', '$classname', '$rollno', '$school', '$gender', now())";
     }
 
     if (mysqli_query($conn, $query)) {
@@ -150,7 +150,7 @@ if (isset($_POST['submit']) || isset($_POST['update'])) {
             </thead>
             <tbody>
                 <?php
-                    $query = mysqli_query($conn, "SELECT * FROM userdata");
+                    $query = mysqli_query($conn, "SELECT * FROM studentdata");
                     while ($row = mysqli_fetch_assoc($query)) {
                 ?>
                 <tr>
