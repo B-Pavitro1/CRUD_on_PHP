@@ -182,7 +182,7 @@ if (isset($_POST['submit']) || isset($_POST['update'])) {
                     <td>
                         <a href="?id=<?php echo $row['id']; ?>"><i class="far fa-edit"></i></a>
                         <a href="?delid=<?php echo $row['id']; ?>"><i class="fas fa-trash-alt"></i></a>
-                        <a href="user_card.php?viewcardid=<?php echo $row['id'] ?>"><i class="far fa-eye"></i></a>
+                        <a href="student_card.php?viewcardid=<?php echo $row['id'] ?>"><i class="far fa-eye"></i></a>
                     </td>
                 </tr>
                 <?php } ?>
