@@ -16,7 +16,7 @@
   <div class="container">
     <div class="row">
       <?php 
-      $query = mysqli_query($conn,"SELECT * FROM userdata WHERE id='".$_GET['viewcardid']."'");
+      $query = mysqli_query($conn,"SELECT * FROM studentdata WHERE id='".$_GET['viewcardid']."'");
       foreach($query as $card){
       ?>
       <div class="card" style="width: 18rem;">
